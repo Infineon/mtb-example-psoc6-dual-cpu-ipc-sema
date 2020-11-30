@@ -79,7 +79,7 @@ int main(void)
         #endif        
             {
                 /* Print a message to the console */
-                Cy_SCB_UART_PutString(UART_RES, "Message sent from CM0+\n\r");
+                Cy_SCB_UART_PutString(UART_RES, "Message sent from CM0+\r\n");
 
             #if ENABLE_SEMA    
                 while (CY_IPC_SEMA_SUCCESS != Cy_IPC_Sema_Clear(SEMA_NUM, false));

@@ -100,7 +100,7 @@ int main(void)
         #endif
             {
                 /* Print a message to the console */
-                printf("Message sent from CM4\n\r");
+                printf("Message sent from CM4\r\n");
 
             #if ENABLE_SEMA
                 while (CY_IPC_SEMA_SUCCESS != Cy_IPC_Sema_Clear(SEMA_NUM, false));
