@@ -47,6 +47,8 @@
 
 #if defined (TARGET_CYSBSYSKIT_DEV_01)
 #define UART_RES        SCB10
+#elif defined (TARGET_CY8CKIT_062S4)
+#define UART_RES        SCB2
 #else
 #define UART_RES        SCB5
 #endif
